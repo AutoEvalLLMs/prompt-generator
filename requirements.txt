@@ -1,0 +1,20 @@
+torch >= 2.0.1
+einops
+snorkel
+spacy
+nltk
+openai
+langchain
+textblob
+numpy
+sqlite3
+pytest
+wandb
+omegaconf
+tiktoken
+tqdm
+altair 
+logging
+sys
+os
+
