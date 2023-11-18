@@ -16,3 +16,9 @@ nltk
 re
 json
 sqlite3
+hfapi #huggingface api 
+requests
+transformers 
+altair 
+huggingface_hub #huggingface platform 
+datasets 
