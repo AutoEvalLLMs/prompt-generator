@@ -1,3 +1,5 @@
+import json
+
 class formatSeedPromptData(object):
     def jsonl_formatter(self, arg1, arg2):
         """
