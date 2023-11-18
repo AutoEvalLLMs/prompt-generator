@@ -1,0 +1,18 @@
+torch >= 2.0.1
+einops
+numpy
+pytest
+omegaconf
+tiktoken
+tqdm
+datasets
+wandb
+json
+pandas
+snorkel
+spacy
+scipy
+nltk
+re
+json
+sqlite3
