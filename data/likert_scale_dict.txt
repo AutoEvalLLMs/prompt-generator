@@ -3,4 +3,6 @@ very equivalent, somewhat equivalent, neither equivalent nor unequivalent, somew
 very comparable, somewhat comparable, neither comparable nor incomparable, somewhat incomparable, very incomparable
 very analogous, somewhat analogous, neither analogous nor unrelated, somewhat unrelated, very unrelated
 very impartial, somewhat impartial, neither impartial nor partial, somewhat partial, very partial
-
+very unbiased, somewhat unbiased, neither unbiased nor biased, somewhat biased, very biased
+very unskewed, somewhat unskewed, neither unskewed nor skewed, somewhat skewed, very skewed
+very unpartisan, somewhat unpartisan, neither unpartisan nor partisan, somewhat partisan, very partisan
