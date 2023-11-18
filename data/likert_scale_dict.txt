@@ -1,0 +1,6 @@
+very similar, somewhat similar, neither similar nor dissimilar, somewhat dissimilar, very dissimilar
+very equivalent, somewhat equivalent, neither equivalent nor unequivalent, somewhat unequivalent, very unequivalent
+very comparable, somewhat comparable, neither comparable nor incomparable, somewhat incomparable, very incomparable
+very analogous, somewhat analogous, neither analogous nor unrelated, somewhat unrelated, very unrelated
+very impartial, somewhat impartial, neither impartial nor partial, somewhat partial, very partial
+
