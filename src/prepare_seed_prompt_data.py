@@ -1,8 +1,6 @@
 import json
 
 class FormatSeedPromptData:
-    def __init__(self):
-        pass
     
     @staticmethod
     def line_to_json(line):
@@ -17,9 +15,9 @@ class FormatSeedPromptData:
         parts = line.strip().split(', ')
         if len(parts) < 3:
             return None
-        return {'name': parts[0], 'age': parts[1], 'email': parts[2]}
+        return {'demographic': parts[0], 'major': parts[1], 'format': parts[2]}
 
-    def convert_text_to_jsonl(input_file_path, output_file_path):
+    def convert_text_to_jsonl(self, input_file_path, output_file_path):
         """
         Convert a text file where each line is an entry separated by commas
         into a JSON Lines (jsonl) file where each line is a JSON object.

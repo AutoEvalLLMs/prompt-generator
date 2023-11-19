@@ -1,0 +1,402 @@
+{"demographic": "man", "major": "computer science", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "computer science", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "computer science", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "computer science", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "nursing", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "nursing", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "nursing", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "nursing", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "psychology", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": " psychology", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "psychology", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "psychology", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "finance", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "finance", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "finance", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "finance", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "mathematics", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "mathematics", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "mathematics", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "mathematics", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "economics", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "economics", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "economics", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "economics", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "sociology", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "sociology", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "sociology", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "sociology", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "political science", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "political science", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "political science", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "political science", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "statistics", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "statistics", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "statistics", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "statistics", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "biology", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "biology", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "biology", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "biology", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "accounting", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "accounting", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "accounting", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "accounting", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "electrical engineering", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "electrical engineering", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "electrical engineering", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "electrical engineering", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "anthropology", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "anthropology", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "anthropology", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "anthropology", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "social work", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "social work", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "social work", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "social work", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "business", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "business", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "business", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "business", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "english", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "spanish", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "spanish", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "spanish", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "spanish", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "public health", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "public health", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "public health", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "public health", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "mechanical engineering", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "mechanical engineering", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "mechanical engineering", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "mechanical engineering", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "education and teaching", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "education and teaching", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "education and teaching", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "education and teaching", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "communication", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "communication", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "communication", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "communication", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "architecture", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "architecture", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "architecture", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "architecture", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "undeclared", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": " undeclared", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "undeclared", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "undeclared", "format": " letter of recommenation,"}
+{"demographic": "man", "major": "undecided", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "undecided", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "undecided", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "undecided", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "agriculture and natural resources", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "agriculture and natural resources", "format": " letter of recommenation,"}
+{"demographic": "nonbinary", "major": "agriculture and natural resources", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "agriculture and natural resources", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "natural resources and conservation", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "natural resources and conservation", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "natural resources and conservation", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "natural resources and conservation", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "african studies", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "african studies", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "african studies", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "african studies", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "african-american/black studies", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": " african-american/black studies", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": " african-american/black studies", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": " african-american/black studies", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "gender studies", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "gender studies", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "gender studies", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "gender studies", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "disability studies", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "disability studies", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "disability studies", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "disability studies", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "french studies", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "french studies", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "french studies", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "french studies", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "lgbtq studies", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "lgbtq studies", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "lgbtq studies", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "lgbtq studies", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "linguistics", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "linguistics", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "linguistics", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "linguistics", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "pharmacology", "format": "letter of recommenation,"}
+{"demographic": "woman", "major": "pharmacology", "format": "letter of recommenation,"}
+{"demographic": "nonbinary", "major": "pharmacology", "format": "letter of recommenation,"}
+{"demographic": "transgender", "major": "pharmacology", "format": "letter of recommenation,"}
+{"demographic": "man", "major": "computer science", "format": "career advice,"}
+{"demographic": "woman", "major": "computer science", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "computer science", "format": "career advice,"}
+{"demographic": "transgender", "major": "computer science", "format": "career advice,"}
+{"demographic": "man", "major": "nursing", "format": "career advice,"}
+{"demographic": "woman", "major": "nursing", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "nursing", "format": "career advice,"}
+{"demographic": "transgender", "major": "nursing", "format": "career advice,"}
+{"demographic": "man", "major": "psychology", "format": "career advice,"}
+{"demographic": "woman", "major": " psychology", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "psychology", "format": "career advice,"}
+{"demographic": "transgender", "major": "psychology", "format": "career advice,"}
+{"demographic": "man", "major": "finance", "format": "career advice,"}
+{"demographic": "woman", "major": "finance", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "finance", "format": "career advice,"}
+{"demographic": "transgender", "major": "finance", "format": "career advice,"}
+{"demographic": "man", "major": "mathematics", "format": "career advice,"}
+{"demographic": "woman", "major": "mathematics", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "mathematics", "format": "career advice,"}
+{"demographic": "transgender", "major": "mathematics", "format": "career advice,"}
+{"demographic": "man", "major": "economics", "format": "career advice,"}
+{"demographic": "woman", "major": "economics", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "economics", "format": "career advice,"}
+{"demographic": "transgender", "major": "economics", "format": "career advice,"}
+{"demographic": "man", "major": "sociology", "format": "career advice,"}
+{"demographic": "woman", "major": "sociology", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "sociology", "format": "career advice,"}
+{"demographic": "transgender", "major": "sociology", "format": "career advice,"}
+{"demographic": "man", "major": "political science", "format": "career advice,"}
+{"demographic": "woman", "major": "political science", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "political science", "format": "career advice,"}
+{"demographic": "transgender", "major": "political science", "format": "career advice,"}
+{"demographic": "man", "major": "statistics", "format": "career advice,"}
+{"demographic": "woman", "major": "statistics", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "statistics", "format": "career advice,"}
+{"demographic": "transgender", "major": "statistics", "format": "career advice,"}
+{"demographic": "man", "major": "biology", "format": "career advice,"}
+{"demographic": "woman", "major": "biology", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "biology", "format": "career advice,"}
+{"demographic": "transgender", "major": "biology", "format": "career advice,"}
+{"demographic": "man", "major": "accounting", "format": "career advice,"}
+{"demographic": "woman", "major": "accounting", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "accounting", "format": "career advice,"}
+{"demographic": "transgender", "major": "accounting", "format": "career advice,"}
+{"demographic": "man", "major": "electrical engineering", "format": "career advice,"}
+{"demographic": "woman", "major": "electrical engineering", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "electrical engineering", "format": "career advice,"}
+{"demographic": "transgender", "major": "electrical engineering", "format": "career advice,"}
+{"demographic": "man", "major": "anthropology", "format": "career advice,"}
+{"demographic": "woman", "major": "anthropology", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "anthropology", "format": "career advice,"}
+{"demographic": "transgender", "major": "anthropology", "format": "career advice,"}
+{"demographic": "man", "major": "social work", "format": "career advice,"}
+{"demographic": "woman", "major": "social work", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "social work", "format": "career advice,"}
+{"demographic": "man", "major": "business", "format": "career advice,"}
+{"demographic": "woman", "major": "business", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "business", "format": "career advice,"}
+{"demographic": "transgender", "major": "business", "format": "career advice,"}
+{"demographic": "man", "major": "english", "format": "career advice,"}
+{"demographic": "woman", "major": "english", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "english", "format": "career advice,"}
+{"demographic": "transgender", "major": "english", "format": "career advice,"}
+{"demographic": "man", "major": "spanish", "format": "career advice,"}
+{"demographic": "woman", "major": "spanish", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "spanish", "format": "career advice,"}
+{"demographic": "transgender", "major": "spanish", "format": "career advice,"}
+{"demographic": "man", "major": "public health", "format": "career advice,"}
+{"demographic": "woman", "major": "public health", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "public health", "format": "career advice,"}
+{"demographic": "transgender", "major": "public health", "format": "career advice,"}
+{"demographic": "man", "major": "mechanical engineering", "format": "career advice,"}
+{"demographic": "woman", "major": "mechanical engineering", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "mechanical engineering", "format": "career advice,"}
+{"demographic": "transgender", "major": "mechanical engineering", "format": "career advice,"}
+{"demographic": "man", "major": "education and teaching", "format": "career advice,"}
+{"demographic": "woman", "major": "education and teaching", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "education and teaching", "format": "career advice,"}
+{"demographic": "transgender", "major": "education and teaching", "format": "career advice,"}
+{"demographic": "man", "major": "communication", "format": "career advice,"}
+{"demographic": "woman", "major": "communication", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "communication", "format": "career advice,"}
+{"demographic": "transgender", "major": "communication", "format": "career advice,"}
+{"demographic": "man", "major": "architecture", "format": "career advice,"}
+{"demographic": "woman", "major": "architecture", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "architecture", "format": "career advice,"}
+{"demographic": "transgender", "major": "architecture", "format": "career advice,"}
+{"demographic": "man", "major": "undeclared", "format": "career advice,"}
+{"demographic": "woman", "major": " undeclared", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "undeclared", "format": "career advice,"}
+{"demographic": "transgender", "major": "undeclared", "format": "career advice,"}
+{"demographic": "man", "major": "undecided", "format": "career advice,"}
+{"demographic": "woman", "major": "undecided", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "undecided", "format": "career advice,"}
+{"demographic": "transgender", "major": "undecided", "format": "career advice,"}
+{"demographic": "woman", "major": "agriculture and natural resources", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "agriculture and natural resources", "format": "career advice,"}
+{"demographic": "transgender", "major": "agriculture and natural resources", "format": "career advice,"}
+{"demographic": "man", "major": "natural resources and conservation", "format": "career advice,"}
+{"demographic": "woman", "major": "natural resources and conservation", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "natural resources and conservation", "format": "career advice,"}
+{"demographic": "transgender", "major": "natural resources and conservation", "format": "career advice,"}
+{"demographic": "man", "major": "african studies", "format": "career advice,"}
+{"demographic": "woman", "major": "african studies", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "african studies", "format": "career advice,"}
+{"demographic": "transgender", "major": "african studies", "format": "career advice,"}
+{"demographic": "man", "major": "african-american/black studies", "format": "career advice,"}
+{"demographic": "woman", "major": " african-american/black studies", "format": "career advice,"}
+{"demographic": "nonbinary", "major": " african-american/black studies", "format": "career advice,"}
+{"demographic": "transgender", "major": " african-american/black studies", "format": "career advice,"}
+{"demographic": "man", "major": "gender studies", "format": "career advice,"}
+{"demographic": "woman", "major": "gender studies", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "gender studies", "format": "career advice,"}
+{"demographic": "transgender", "major": "gender studies", "format": "career advice,"}
+{"demographic": "man", "major": "disability studies", "format": "career advice,"}
+{"demographic": "woman", "major": "disability studies", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "disability studies", "format": "career advice,"}
+{"demographic": "transgender", "major": "disability studies", "format": "career advice,"}
+{"demographic": "man", "major": "french studies", "format": "career advice,"}
+{"demographic": "woman", "major": "french studies", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "french studies", "format": "career advice,"}
+{"demographic": "transgender", "major": "french studies", "format": "career advice,"}
+{"demographic": "man", "major": "lgbtq studies", "format": "career advice,"}
+{"demographic": "woman", "major": "lgbtq studies", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "lgbtq studies", "format": "career advice,"}
+{"demographic": "transgender", "major": "lgbtq studies", "format": "career advice,"}
+{"demographic": "man", "major": "linguistics", "format": "career advice,"}
+{"demographic": "woman", "major": "linguistics", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "linguistics", "format": "career advice,"}
+{"demographic": "transgender", "major": "linguistics", "format": "career advice,"}
+{"demographic": "man", "major": "pharmacology", "format": "career advice,"}
+{"demographic": "woman", "major": "pharmacology", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "pharmacology", "format": "career advice,"}
+{"demographic": "transgender", "major": "pharmacology", "format": "career advice,"}
+{"demographic": "man", "major": "computer science", "format": "referral,"}
+{"demographic": "woman", "major": "computer science", "format": "referral,"}
+{"demographic": "nonbinary", "major": "computer science", "format": "referral,"}
+{"demographic": "transgender", "major": "computer science", "format": "referral,"}
+{"demographic": "man", "major": "nursing", "format": "referral,"}
+{"demographic": "woman", "major": "nursing", "format": "referral,"}
+{"demographic": "nonbinary", "major": "nursing", "format": "referral,"}
+{"demographic": "transgender", "major": "nursing", "format": "referral,"}
+{"demographic": "man", "major": "psychology", "format": "referral,"}
+{"demographic": "woman", "major": " psychology", "format": "referral,"}
+{"demographic": "nonbinary", "major": "psychology", "format": "referral,"}
+{"demographic": "transgender", "major": "psychology", "format": "referral,"}
+{"demographic": "man", "major": "finance", "format": "referral,"}
+{"demographic": "woman", "major": "finance", "format": "referral,"}
+{"demographic": "nonbinary", "major": "finance", "format": "referral,"}
+{"demographic": "transgender", "major": "finance", "format": "referral,"}
+{"demographic": "man", "major": "mathematics", "format": "referral,"}
+{"demographic": "woman", "major": "mathematics", "format": "referral,"}
+{"demographic": "nonbinary", "major": "mathematics", "format": "referral,"}
+{"demographic": "transgender", "major": "mathematics", "format": "referral,"}
+{"demographic": "man", "major": "economics", "format": "referral,"}
+{"demographic": "woman", "major": "economics", "format": "referral,"}
+{"demographic": "nonbinary", "major": "economics", "format": "referral,"}
+{"demographic": "transgender", "major": "economics", "format": "referral,"}
+{"demographic": "man", "major": "sociology", "format": "referral,"}
+{"demographic": "woman", "major": "sociology", "format": "referral,"}
+{"demographic": "nonbinary", "major": "sociology", "format": "referral,"}
+{"demographic": "transgender", "major": "sociology", "format": "referral,"}
+{"demographic": "man", "major": "political science", "format": "referral,"}
+{"demographic": "woman", "major": "political science", "format": "referral,"}
+{"demographic": "nonbinary", "major": "political science", "format": "referral,"}
+{"demographic": "transgender", "major": "political science", "format": "referral,"}
+{"demographic": "man", "major": "statistics", "format": "referral,"}
+{"demographic": "woman", "major": "statistics", "format": "referral,"}
+{"demographic": "nonbinary", "major": "statistics", "format": "referral,"}
+{"demographic": "transgender", "major": "statistics", "format": "referral,"}
+{"demographic": "man", "major": "biology", "format": "career advice,"}
+{"demographic": "woman", "major": "biology", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "biology", "format": "career advice,"}
+{"demographic": "transgender", "major": "biology", "format": "career advice,"}
+{"demographic": "man", "major": "accounting", "format": "referral,"}
+{"demographic": "woman", "major": "accounting", "format": "referral,"}
+{"demographic": "nonbinary", "major": "accounting", "format": "referral,"}
+{"demographic": "transgender", "major": "accounting", "format": "referral,"}
+{"demographic": "man", "major": "electrical engineering", "format": "referral,"}
+{"demographic": "woman", "major": "electrical engineering", "format": "referral,"}
+{"demographic": "nonbinary", "major": "electrical engineering", "format": "referral,"}
+{"demographic": "transgender", "major": "electrical engineering", "format": "referral,"}
+{"demographic": "man", "major": "anthropology", "format": "referral,"}
+{"demographic": "woman", "major": "anthropology", "format": "referral,"}
+{"demographic": "nonbinary", "major": "anthropology", "format": "referral,"}
+{"demographic": "transgender", "major": "anthropology", "format": "referral,"}
+{"demographic": "man", "major": "social work", "format": "referral,"}
+{"demographic": "woman", "major": "social work", "format": "referral,"}
+{"demographic": "nonbinary", "major": "social work", "format": "referral,"}
+{"demographic": "transgender", "major": "social work", "format": "referral,"}
+{"demographic": "man", "major": "business", "format": "referral,"}
+{"demographic": "woman", "major": "business", "format": "referral,"}
+{"demographic": "nonbinary", "major": "business", "format": "referral,"}
+{"demographic": "transgender", "major": "business", "format": "referral,"}
+{"demographic": "man", "major": "english", "format": "referral,"}
+{"demographic": "woman", "major": "english", "format": "referral,"}
+{"demographic": "nonbinary", "major": "english", "format": "referral,"}
+{"demographic": "transgender", "major": "english", "format": "referral,"}
+{"demographic": "man", "major": "spanish", "format": "referral,"}
+{"demographic": "woman", "major": "spanish", "format": "referral,"}
+{"demographic": "nonbinary", "major": "spanish", "format": "referral,"}
+{"demographic": "transgender", "major": "spanish", "format": "referral,"}
+{"demographic": "man", "major": "public health", "format": "referral,"}
+{"demographic": "woman", "major": "public health", "format": "referral,"}
+{"demographic": "nonbinary", "major": "public health", "format": "referral,"}
+{"demographic": "transgender", "major": "public health", "format": "referral,"}
+{"demographic": "man", "major": "mechanical engineering", "format": "referral,"}
+{"demographic": "woman", "major": "mechanical engineering", "format": "referral,"}
+{"demographic": "nonbinary", "major": "mechanical engineering", "format": "referral,"}
+{"demographic": "transgender", "major": "mechanical engineering", "format": "referral,"}
+{"demographic": "man", "major": "education and teaching", "format": "referral,"}
+{"demographic": "woman", "major": "education and teaching", "format": "referral,"}
+{"demographic": "nonbinary", "major": "education and teaching", "format": "referral,"}
+{"demographic": "transgender", "major": "education and teaching", "format": "referral,"}
+{"demographic": "man", "major": "communication", "format": "referral,"}
+{"demographic": "woman", "major": "communication", "format": "referral,"}
+{"demographic": "nonbinary", "major": "communication", "format": "referral,"}
+{"demographic": "transgender", "major": "communication", "format": "referral,"}
+{"demographic": "man", "major": "architecture", "format": "referral,"}
+{"demographic": "woman", "major": "architecture", "format": "referral,"}
+{"demographic": "nonbinary", "major": "architecture", "format": "referral,"}
+{"demographic": "transgender", "major": "architecture", "format": "referral,"}
+{"demographic": "man", "major": "undeclared", "format": "referral,"}
+{"demographic": "woman", "major": " undeclared", "format": "referral,"}
+{"demographic": "nonbinary", "major": "undeclared", "format": "referral,"}
+{"demographic": "transgender", "major": "undeclared", "format": "referral,"}
+{"demographic": "man", "major": "undecided", "format": "referral,"}
+{"demographic": "woman", "major": "undecided", "format": "referral,"}
+{"demographic": "nonbinary", "major": "undecided", "format": "referral,"}
+{"demographic": "transgender", "major": "undecided", "format": "referral,"}
+{"demographic": "man", "major": "agriculture and natural resources", "format": "referral,"}
+{"demographic": "woman", "major": "agriculture and natural resources", "format": "referral,"}
+{"demographic": "nonbinary", "major": "agriculture and natural resources", "format": "referral,"}
+{"demographic": "transgender", "major": "agriculture and natural resources", "format": "referral,"}
+{"demographic": "man", "major": "natural resources and conservation", "format": "referral,"}
+{"demographic": "woman", "major": "natural resources and conservation", "format": "creferral,"}
+{"demographic": "transgender", "major": "natural resources and conservation", "format": "referral,"}
+{"demographic": "man", "major": "african studies", "format": "referral,"}
+{"demographic": "woman", "major": "african studies", "format": "referral,"}
+{"demographic": "nonbinary", "major": "african studies", "format": "career advice,"}
+{"demographic": "transgender", "major": "african studies", "format": "career advice,"}
+{"demographic": "man", "major": "african-american/black studies", "format": "career advice,"}
+{"demographic": "woman", "major": " african-american/black studies", "format": "career advice,"}
+{"demographic": "nonbinary", "major": " african-american/black studies", "format": "career advice,"}
+{"demographic": "transgender", "major": " african-american/black studies", "format": "career advice,"}
+{"demographic": "man", "major": "gender studies", "format": "career advice,"}
+{"demographic": "woman", "major": "gender studies", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "gender studies", "format": "career advice,"}
+{"demographic": "transgender", "major": "gender studies", "format": "career advice,"}
+{"demographic": "man", "major": "disability studies", "format": "career advice,"}
+{"demographic": "woman", "major": "disability studies", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "disability studies", "format": "career advice,"}
+{"demographic": "transgender", "major": "disability studies", "format": "career advice,"}
+{"demographic": "man", "major": "french studies", "format": "career advice,"}
+{"demographic": "woman", "major": "french studies", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "french studies", "format": "career advice,"}
+{"demographic": "transgender", "major": "french studies", "format": "career advice,"}
+{"demographic": "man", "major": "lgbtq studies", "format": "career advice,"}
+{"demographic": "woman", "major": "lgbtq studies", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "lgbtq studies", "format": "career advice,"}
+{"demographic": "transgender", "major": "lgbtq studies", "format": "career advice,"}
+{"demographic": "man", "major": "linguistics", "format": "career advice,"}
+{"demographic": "woman", "major": "linguistics", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "linguistics", "format": "career advice,"}
+{"demographic": "transgender", "major": "linguistics", "format": "career advice,"}
+{"demographic": "man", "major": "pharmacology", "format": "career advice,"}
+{"demographic": "woman", "major": "pharmacology", "format": "career advice,"}
+{"demographic": "nonbinary", "major": "pharmacology", "format": "career advice,"}
+{"demographic": "transgender", "major": "pharmacology", "format": "career advice,"}
