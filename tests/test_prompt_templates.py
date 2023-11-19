@@ -4,7 +4,7 @@ sys.path.append('/Users/skingsle/llm-class-term-project/prompt-generator/src/')
 import pytest
 from prompt_templates import PromptTemplates
 import os
-
+''' 
 # Create test files with example content
 @pytest.fixture(scope='module')
 def setup_test_files(tmp_path_factory):
@@ -35,8 +35,8 @@ def setup_test_files(tmpdir_factory):
     variables_file = temp_dir.join('variables.txt')
     likert_file = temp_dir.join('likert.txt')
     
-    verbs = ['sing', 'dance']
-    variables = ['John Doe', 'artist', 'Pop Music']
+    verbs = ['write']
+    variables = ['man', 'computer scientist', 'letter of recommendation']
     likert = ['Strongly Agree; Agree; Neutral; Disagree; Strongly Disagree']
     
     # Write to the temporary files
@@ -45,13 +45,13 @@ def setup_test_files(tmpdir_factory):
     likert_file.write('\n'.join(likert))
     
     return str(verbs_file), str(variables_file), str(likert_file)
-'''
+
 # Test the modify_message_with_verbs() method
 def test_modify_message_with_verbs(setup_test_files):
     verbs_file, _, _ = setup_test_files
-    message_template = "I love to {}"
+    message_template = "For demographic studying major, please {} an artifact"
     
-    expected_outputs = ['I love to sing', 'I love to dance']
+    expected_outputs = ['For demographic studying major, please write an artifact']
     
     prompt_templates = PromptTemplates([message_template], verbs_file, '')
     modified_messages = prompt_templates.modify_message_with_verbs([message_template], verbs_file)
