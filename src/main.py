@@ -17,5 +17,5 @@ message_output_jsonl_file = 'messages_output_file.jsonl'
 likert_file_path = 'your_likert_scale_text_file.txt'
 output_jsonl_file = 'output_file.jsonl'
 
-# Insert a Likert scale into your message templates. 
-prompt_templates = generate_likert_scales_for_prompts(likert_file_path)
+# Get prompts to feed into LLM: 
+prompts = generate_likert_scales_for_prompts(likert_file_path)
