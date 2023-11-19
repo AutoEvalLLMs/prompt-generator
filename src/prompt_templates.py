@@ -15,16 +15,15 @@ class PromptTemplates:
     def modify_message_with_variables(self, modified_messages_verbs, variables_file_path):
         with open(variables_file_path, 'r') as file:
             variables = [line.strip() for line in file]
-        modified_messages = [message.format(*variables) for message in modified_messages_verbs]
-        return modified_messages
+        modified_messages_variables = [message.format(*variables) for message in modified_messages_verbs]
+        return modified_messages_variables
     
-    def generate_likert_scales_for_prompts(self, likert_file_path):
-        messages_with_variables = self.modify_message_with_variables(self.variables_file_path)
+    def generate_likert_scales_for_prompts(self, modified_messages_variables, likert_file_path):
         all_prompts = []
         with open(likert_file_path, 'r') as file:
             likert_scales = [line.strip() for line in file]
-            for message in messages_with_variables:
+            for message in modified_messages_variables:
                 for scale in likert_scales:
-                    prompt = "Instructions: Generate and print 5 versions of message according to this Likert Scale: [{}]".format(scale)
+                    prompt = "Instructions: Generate and print 5 versions of the message, according to this Likert Scale: [{}]".format(scale)
                     all_prompts.append(prompt)
         return all_prompts
