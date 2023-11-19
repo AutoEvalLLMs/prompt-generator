@@ -1,13 +1,26 @@
 
 class prompt_templates:
     
+    def modify_message_with_verbs(self, message_templates, verbs_file_path):
+            # Read the variables from the file
+        with open(verbs_file_path, 'r') as file:
+            variables = [line.strip() for line in file]
+
+        # Replace the placeholders in the template with the actual variables
+        modified_messages = message_templates.format(*variables)
+
+        return modified_messages
+    
     def modify_message_with_variables(self, message_templates, variables_file_path):
+        # insert verbs into message templates:
+        messages = self.modify_message_with_verbs(self.message_templates, self.verbs_file_path)
+        
         # Read the variables from the file
         with open(variables_file_path, 'r') as file:
             variables = [line.strip() for line in file]
 
         # Replace the placeholders in the template with the actual variables
-        modified_messages = message_templates.format(*variables)
+        modified_messages = messages.format(*variables)
 
         return modified_messages
      
