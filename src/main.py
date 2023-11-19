@@ -11,10 +11,14 @@ formatter = FormatSeedPromptData()
 formatter.convert_text_to_jsonl(input_text_file, output_jsonl_file)
 
 # Replace 'your_message_templates.txt' with the path to your actual text file.
-message_templates = '/Users/skingsle/llm-class-term-project/prompt-generator/data/seed_messages'
-variables_file_path = '/Users/skingsle/llm-class-term-project/prompt-generator/data/seed-data'                     # Replace with the path to your seed-data variables file.
-verbs_file_path = '/Users/skingsle/llm-class-term-project/prompt-generator/data/verbs'                         # Replace with the path to your verbs file.
+message_templates = '/Users/skingsle/llm-class-term-project/prompt-generator/data/seed_messages'  # Replace with the path to your seed-data variables file.
 message_output_jsonl_file = 'messages_output_file.jsonl'
+variables_file_path = '/Users/skingsle/llm-class-term-project/prompt-generator/output/output_file.jsonl'
+#'/Users/skingsle/llm-class-term-project/prompt-generator/data/seed-data'                    
+verbs_file_path = '/Users/skingsle/llm-class-term-project/prompt-generator/data/verbs'                         # Replace with the path to your verbs file.
+
+
+
 seed_messages_verbs_path = '/Users/skingsle/llm-class-term-project/prompt-generator/output/seed_messages_verbs'
 seed_messages_variables_path = '/Users/skingsle/llm-class-term-project/prompt-generator/output/seed_messages_variables'
 seed_messages_variables_output_file = '/Users/skingsle/llm-class-term-project/prompt-generator/output/seed_messages_variables'
