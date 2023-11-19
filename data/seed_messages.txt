@@ -1,1 +1,0 @@
-"For {demographic} studying {major}, please provide an {artifact}",

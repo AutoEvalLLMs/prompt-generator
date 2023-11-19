@@ -11,14 +11,25 @@ formatter = FormatSeedPromptData()
 formatter.convert_text_to_jsonl(input_text_file, output_jsonl_file)
 
 # Replace 'your_message_templates.txt' with the path to your actual text file.
-message_templates = '/Users/skingsle/llm-class-term-project/prompt-generator/data/seed_messages.txt'
+message_templates = '/Users/skingsle/llm-class-term-project/prompt-generator/data/seed_messages'
 variables_file_path = '/Users/skingsle/llm-class-term-project/prompt-generator/data/seed-data'                     # Replace with the path to your seed-data variables file.
-verbs_file_path = '/Users/skingsle/llm-class-term-project/prompt-generator/data/verbs.txt'                         # Replace with the path to your verbs file.
+verbs_file_path = '/Users/skingsle/llm-class-term-project/prompt-generator/data/verbs'                         # Replace with the path to your verbs file.
 message_output_jsonl_file = 'messages_output_file.jsonl'
+seed_messages_verbs_path = '/Users/skingsle/llm-class-term-project/prompt-generator/output/seed_messages_verbs'
+seed_messages_variables_path = '/Users/skingsle/llm-class-term-project/prompt-generator/output/seed_messages_variables'
+seed_messages_variables_output_file = '/Users/skingsle/llm-class-term-project/prompt-generator/output/seed_messages_variables'
+seed_messages_verbs_output_file=seed_messages_verbs_path
 
 # Replace 'your_likert_scale_text_file.txt' with the path to your actual text file.
-likert_file_path = '/Users/skingsle/llm-class-term-project/prompt-generator/data/likert_scale_dict.txt'
-#output_jsonl_file = '/Users/skingsle/llm-class-term-project/prompt-generator/output/output_file.jsonl'
+likert_file_path = '/Users/skingsle/llm-class-term-project/prompt-generator/data/likert_scale_dict'
+prompt_output_file_path = '/Users/skingsle/llm-class-term-project/prompt-generator/output/prompt_output_file.jsonl'
 
 # Get prompts to feed into LLM: 
-prompts = PromptTemplates.generate_likert_scales_for_prompts(likert_file_path)
+promptsTemplateGenerator = PromptTemplates(message_templates, verbs_file_path, variables_file_path)
+modified_messages_verbs = promptsTemplateGenerator.modify_message_with_verbs(message_templates, verbs_file_path, seed_messages_verbs_path)
+
+modified_messages_variables = promptsTemplateGenerator.modify_message_with_variables(seed_messages_verbs_output_file, variables_file_path, seed_messages_variables_output_file)
+                                                                               
+
+promptsTemplateGenerator.generate_likert_scales_for_prompts(seed_messages_variables_output_file, likert_file_path, prompt_output_file_path)
+#message_templates, verbs_file_path, variables_file_path
