@@ -36,7 +36,7 @@ def setup_test_files(tmpdir_factory):
     likert_file = temp_dir.join('likert.txt')
     
     verbs = ['write']
-    variables = ['man', 'computer scientist', 'letter of recommendation']
+    variables = ['man', 'computer science', 'letter of recommendation']
     likert = ['Strongly Agree; Agree; Neutral; Disagree; Strongly Disagree']
     
     # Write to the temporary files
@@ -59,23 +59,22 @@ def test_modify_message_with_verbs(setup_test_files):
 
 # Test the modify_message_with_variables() method
 def test_modify_message_with_variables(setup_test_files):
-    verbs_file, variables_file, _ = setup_test_files
-    message_template = "My friend {} is an excellent {}"
+    _, variables_file, _ = setup_test_files
+    message_template = "For a {} studying {}, please write {}"
     
-    expected_output = ["My friend John Doe is an excellent sing artist", 
-                       "My friend John Doe is an excellent dance artist"]
+    expected_output = ["For a man studying computer science, please write letter of recommendation"]
     
-    prompt_templates = PromptTemplates([message_template], verbs_file, variables_file)
-    modified_messages = prompt_templates.modify_message_with_variables([message_template], variables_file)
+    prompt_templates = PromptTemplates([message_template], variables_file, '')
+    modified_messages = prompt_templates.modify_message_with_variables([message_template], variables_file_path=variables_file)
     assert modified_messages == expected_output
 
 # Test the generate_likert_scales_for_prompts() method
 def test_generate_likert_scales_for_prompts(setup_test_files):
-    _, variables_file, likert_file = setup_test_files
-    message_template = "As a {}, my ability to {} {} is unmatched"
+    likert_file, _, _ = setup_test_files
+    likert_message_template = "Instructions: Generate and print 5 versions of message, according to this Likert Scale: {}"
     
-    expected_output = ["Instructions: Generate and print 5 versions of As a artist, my ability to sing Pop Music is unmatched according to this Likert Scale: [Strongly Agree; Agree; Neutral; Disagree; Strongly Disagree]"]
+    expected_output = ["Instructions: Generate and print 5 versions of message,  according to this Likert Scale: [Strongly Agree; Agree; Neutral; Disagree; Strongly Disagree]"]
     
-    prompt_templates = PromptTemplates([message_template], '', variables_file)
+    prompt_templates = PromptTemplates([likert_message_template], likert_file)
     prompts_with_likert = prompt_templates.generate_likert_scales_for_prompts(likert_file)
     assert prompts_with_likert == expected_output
