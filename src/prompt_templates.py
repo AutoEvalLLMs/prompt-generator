@@ -1,4 +1,3 @@
-
 class PromptTemplates:
     
     def __init__(self, message_templates, verbs_file_path, variables_file_path):
