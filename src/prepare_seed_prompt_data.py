@@ -3,7 +3,7 @@ import json
 class FormatSeedPromptData:
     
     @staticmethod
-    def line_to_json(line):
+    def line_to_json_seed_data(line):
         """
         Convert a line of text into a JSON object.
 
@@ -16,6 +16,22 @@ class FormatSeedPromptData:
         if len(parts) < 3:
             return None
         return {'demographic': parts[0], 'major': parts[1], 'format': parts[2]}
+    
+    '''
+    def line_to_json_seed_messages(line):
+        """
+        Convert a line of text into a JSON object.
+
+        :param line: The line from the text file.
+        :type line: str
+        :return: A JSON object representing the line or None if the line is invalid.
+        :rtype: dict or None
+        """
+        parts = line.strip().split(', ')
+        if len(parts) < 3:
+            return None
+        return {'demographic': parts[0], 'major': parts[1], 'format': parts[2]}
+    '''
 
     def convert_text_to_jsonl(self, input_file_path, output_file_path):
         """

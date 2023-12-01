@@ -7,22 +7,18 @@ tiktoken
 tqdm
 datasets
 wandb
-json
 pandas
 snorkel
 spacy
 scipy
 nltk
-re
-json
-sqlite3
 hfapi #huggingface api 
 requests
 transformers 
 altair 
 huggingface_hub #huggingface platform 
-datasets 
-os
-sys
-logging 
+datasets  
 openai
+langchain 
+llamaapi
+setuptools
