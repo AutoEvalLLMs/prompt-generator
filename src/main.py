@@ -28,12 +28,12 @@ seed_messages_verbs_output_file=seed_messages_verbs_path
 likert_file_path = '/Users/skingsle/llm-class-term-project/prompt-generator/data/likert_scale_dict'
 prompt_output_file_path = '/Users/skingsle/llm-class-term-project/prompt-generator/output/prompt_output_file.jsonl'
 
-# Get prompts to feed into LLM: 
+# Get prompt TEMPLATES to feed into LLM: 
 promptsTemplateGenerator = PromptTemplates(message_templates, verbs_file_path, variables_file_path)
 modified_messages_verbs = promptsTemplateGenerator.modify_message_with_verbs(message_templates, verbs_file_path, seed_messages_verbs_path)
 
 modified_messages_variables = promptsTemplateGenerator.modify_message_with_variables(seed_messages_verbs_output_file, variables_file_path, seed_messages_variables_output_file)
                                                                                
 
-promptsTemplateGenerator.generate_likert_scales_for_prompts(seed_messages_variables_output_file, likert_file_path, prompt_output_file_path)
+promptTemplates = promptsTemplateGenerator.generate_likert_scales_for_prompts(seed_messages_variables_output_file, likert_file_path, prompt_output_file_path)
 #message_templates, verbs_file_path, variables_file_path
