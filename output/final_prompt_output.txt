@@ -1,0 +1,1 @@
+["Instructions: Generate and print 5 versions of the {message}, according to this Likert Scale: [Strongly Agree; Agree; Neutral; Disagree; Strongly Disagree]"]

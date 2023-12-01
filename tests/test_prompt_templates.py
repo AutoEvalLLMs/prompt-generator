@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/Users/skingsle/llm-class-term-project/prompt-generator/src/')
+sys.path.append('/Users/sayalikandarkar/Desktop/Fall2023/LLM/project/prompt-generator/src/')
 
 import pytest
 from prompt_templates import PromptTemplates
@@ -54,7 +54,10 @@ def test_modify_message_with_verbs(setup_test_files):
     expected_outputs = ['For demographic studying major, please write an artifact']
     
     prompt_templates = PromptTemplates([message_template], verbs_file, '')
-    modified_messages = prompt_templates.modify_message_with_verbs([message_template], verbs_file)
+    print('verbs_file_path',verbs_file)
+    output_file_path = "output/prompt_verbs_output.txt"
+
+    modified_messages = prompt_templates.modify_message_with_verbs([message_template], verbs_file,output_file_path)
     assert modified_messages == expected_outputs
 
 # Test the modify_message_with_variables() method
@@ -65,17 +68,20 @@ def test_modify_message_with_variables(setup_test_files):
     expected_output = ["For a man studying computer science, please write letter of recommendation"]
     
     prompt_templates = PromptTemplates([message_template], variables_file, '')
-    modified_messages = prompt_templates.modify_message_with_variables([message_template], variables_file_path=variables_file)
+    output_file_path = "output/prompt_variables_output.txt"
+    modified_messages = prompt_templates.modify_message_with_variables([message_template], variables_file, output_file_path)
     assert modified_messages == expected_output
 
-# Test the generate_likert_scales_for_prompts() method
+# # Test the generate_likert_scales_for_prompts() method
 def test_generate_likert_scales_for_prompts(setup_test_files):
     _, _, likert_file, = setup_test_files
     message = 'message'
-    likert_message_template = "Instructions: Generate and print 5 versions of the message, according to this Likert Scale: {}"
+    output_file_path = "output/final_prompt_output.txt"
+    likert_message_template = "Instructions: Generate and print 5 versions of the {message}, according to this Likert Scale:"
     
-    expected_output = ["Instructions: Generate and print 5 versions of the message, according to this Likert Scale: [Strongly Agree; Agree; Neutral; Disagree; Strongly Disagree]"]
+    expected_output = ["Instructions: Generate and print 5 versions of the {message}, according to this Likert Scale: [Strongly Agree; Agree; Neutral; Disagree; Strongly Disagree]"]
     
     prompt_templates = PromptTemplates([likert_message_template], likert_file, '')
-    prompts_with_likert = prompt_templates.generate_likert_scales_for_prompts([likert_message_template], likert_file_path=likert_file)
+    prompts_with_likert = prompt_templates.generate_likert_scales_for_prompts([likert_message_template], likert_file, output_file_path)
     assert prompts_with_likert == expected_output
+
