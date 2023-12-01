@@ -14,6 +14,7 @@ class PromptTemplates:
         with open(verbs_file_path, 'r') as verbs_input_file, open(seed_messages_verbs_output_file_path, 'w') as output_file:
             verbs = [line.strip() for line in verbs_input_file]
             modified_messages_verbs = [template.format(*verbs) for template in message_templates]
+            print('modified_messages_verbs',modified_messages_verbs)
         #for message in modified_messages_verbs:
             #json_object = formatter.line_to_json_02(message)  # Assuming that this method exists
             #if json_object:
