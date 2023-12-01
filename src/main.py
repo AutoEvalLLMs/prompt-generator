@@ -47,6 +47,7 @@ promptTemplates = promptsTemplateGenerator.generate_likert_scales_for_prompts(se
 # Initialize generatePrompts class:
 promptsGenerator = generatePrompts(prompt_output_file_path, seed_messages_variables_output_file)
 
+# get prompts:
 getPrompts = promptsGenerator.llm_request_prompt_generation(prompt_output_file_path, seed_messages_variables_output_file)
 
 
