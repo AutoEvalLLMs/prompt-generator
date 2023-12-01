@@ -1,5 +1,6 @@
 from prepare_seed_prompt_data import FormatSeedPromptData
 from prompt_templates import PromptTemplates
+from generate_prompts import generatePrompts
 from dotenv import load_dotenv
 
 # Replace 'your_text_file.txt' with the path to your actual text file.
@@ -42,6 +43,11 @@ modified_messages_variables = promptsTemplateGenerator.modify_message_with_varia
                                                                                
 # generate likert scales for prompts:
 promptTemplates = promptsTemplateGenerator.generate_likert_scales_for_prompts(seed_messages_variables_output_file, likert_file_path, prompt_output_file_path)
+
+# Initialize generatePrompts class:
+promptsGenerator = generatePrompts(prompt_output_file_path, seed_messages_variables_output_file)
+
+getPrompts = promptsGenerator.llm_request_prompt_generation(prompt_output_file_path, seed_messages_variables_output_file)
 
 
 
