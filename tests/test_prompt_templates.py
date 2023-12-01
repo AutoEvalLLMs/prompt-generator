@@ -73,14 +73,14 @@ def test_modify_message_with_variables(setup_test_files):
     assert modified_messages == expected_output
 
 # # Test the generate_likert_scales_for_prompts() method
-# def test_generate_likert_scales_for_prompts(setup_test_files):
-#     _, _, likert_file, = setup_test_files
-#     message = 'message'
-#     likert_message_template = "Instructions: Generate and print 5 versions of the message, according to this Likert Scale: {}"
+def test_generate_likert_scales_for_prompts(setup_test_files):
+    _, _, likert_file, = setup_test_files
+    message = 'message'
+    likert_message_template = "Instructions: Generate and print 5 versions of the message, according to this Likert Scale: {}"
     
-#     expected_output = ["Instructions: Generate and print 5 versions of the message, according to this Likert Scale: [Strongly Agree; Agree; Neutral; Disagree; Strongly Disagree]"]
+    expected_output = ["Instructions: Generate and print 5 versions of the message, according to this Likert Scale: [Strongly Agree; Agree; Neutral; Disagree; Strongly Disagree]"]
     
-#     prompt_templates = PromptTemplates([likert_message_template], likert_file, '')
-#     prompts_with_likert = prompt_templates.generate_likert_scales_for_prompts([likert_message_template], likert_file_path=likert_file)
-#     assert prompts_with_likert == expected_output
+    prompt_templates = PromptTemplates([likert_message_template], likert_file, '')
+    prompts_with_likert = prompt_templates.generate_likert_scales_for_prompts([likert_message_template], likert_file_path=likert_file)
+    assert prompts_with_likert == expected_output
 
