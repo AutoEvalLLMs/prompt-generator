@@ -1,5 +1,6 @@
 from prepare_seed_prompt_data import FormatSeedPromptData
 from prompt_templates import PromptTemplates
+from dotenv import load_dotenv
 
 # Replace 'your_text_file.txt' with the path to your actual text file.
 input_text_file = '/Users/skingsle/llm-class-term-project/prompt-generator/data/seed-data'
