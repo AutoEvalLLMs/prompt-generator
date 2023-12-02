@@ -14,8 +14,8 @@ llama = LlamaAPI(llama_api_key)
 
 class generatePrompts:
     
-    def __init__(self, system_prompt, message):
-        self.system_prompt = system_prompt
+    def __init__(self, prompt_output_file, message):
+        self.system_prompt = prompt_output_file
         self.message = message
         
     def llm_request_prompt_generation(self, system_prompt, message):
