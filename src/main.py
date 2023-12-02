@@ -29,6 +29,7 @@ seed_messages_verbs_output_file=seed_messages_verbs_path
 likert_file_path = 'data/likert_scale_dict'
 prompt_output_file_path = 'output/prompt_output_file.jsonl'
 
+
 # Get prompt TEMPLATES to feed into LLM: 
 
 # initialize PromptTemplates class:
@@ -46,8 +47,12 @@ promptTemplates = promptsTemplateGenerator.generate_likert_scales_for_prompts(se
 # Initialize generatePrompts class:
 promptsGenerator = generatePrompts(prompt_output_file_path, seed_messages_variables_output_file)
 
+
+system_prompt = 'output/final_prompt_output.txt'
+message = 'output/seed_messages_variables.txt'
+
 # get prompts:
-getPrompts = promptsGenerator.llm_request_prompt_generation(prompt_output_file_path, seed_messages_variables_output_file)
+getPrompts = promptsGenerator.llm_request_prompt_generation(system_prompt, seed_messages_variables_output_file)
 print('getPrompts',getPrompts)
 
 
