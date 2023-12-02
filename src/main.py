@@ -49,7 +49,7 @@ promptsGenerator = generatePrompts(prompt_output_file_path, seed_messages_variab
 
 
 system_prompt = 'output/final_prompt_output.txt'
-message = 'output/seed_messages_variables.txt'
+message = 'output/prompt_variables_output.txt'
 
 # get prompts:
 getPrompts = promptsGenerator.llm_request_prompt_generation(system_prompt, seed_messages_variables_output_file)

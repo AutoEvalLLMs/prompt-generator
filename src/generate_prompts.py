@@ -20,14 +20,16 @@ class generatePrompts:
         
     def llm_request_prompt_generation(self, system_prompt, message):
         #systemPromptList = []
-        with open(system_prompt, 'r') as systemPrompt:
-            system_prompt = [line.strip() for line in systemPrompt] 
-            system_prompt = system_prompt[0]
+        #with open(system_prompt, 'r') as systemPrompt:
+            #system_prompt = [line.strip() for line in systemPrompt] 
+            #system_prompt = system_prompt[0]
             #systemPromptList.append(system_prompt)
+        system_prompt = self.system_prompt
+        message = self.message
         #userPromptList = []
-        with open(message, 'r') as message:
-            user_prompt = [line.strip() for line in message]
-            message = user_prompt[0]
+        #with open(message, 'r') as message:
+            #user_prompt = [line.strip() for line in message]
+            #message = user_prompt[0]
             #message = [line.strip() for line in message]
             #userPromptList.append(user_prompt)
         generatedPrompts = []
@@ -37,8 +39,8 @@ class generatePrompts:
         api_request_json = {
             "model": "llama-13b-chat",
             "messages": [
-                {"role": "system", "content": {systemPrompt}},
-                {"role": "user", "content": {message}},
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": message}
                 ]
             }
         response = llama.run(api_request_json)
