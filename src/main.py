@@ -4,27 +4,6 @@ from generate_prompts import generatePrompts
 from dotenv import load_dotenv
 from open_files import open_file
 
-# Replace 'your_text_file.txt' with the path to your actual text file.
-#with open_file('data/seed-data') as f:
-    #input_text_file = f.read()
-    
-#with open_file('output/output_file.jsonl') as f:
-    #output_jsonl_file = f.read()
-    
-#input_text_file = '/Users/skingsle/llm-class-term-project/prompt-generator/data/seed_variables'
-#output_jsonl_file = 'output/output_file.jsonl'
-
-# formatter = FormatSeedPromptData()
-# formatter.convert_text_to_jsonl('input_file.txt', 'output_file.jsonl')
-
-# convert your seed_data.txt file to a .jsonl file
-#FormatSeedPromptData.convert_text_to_jsonl(input_file_path=input_text_file, output_file_path=output_jsonl_file)
-#formatter = FormatSeedPromptData()
-#seed_variables = formatter.convert_text_to_jsonl(input_text_file, output_jsonl_file)
-
-# Replace 'your_message_templates.txt' with the path to your actual text file.
-#with open_file('data/seed-data') as f:
-    #input_text_file = f.read()
 
 # define the seed_verbs input and output file paths:
 seed_verbs = '/Users/skingsle/llm-class-term-project/prompt-generator/data/verbs'  # Replace with the path to your seed-data variables file.
