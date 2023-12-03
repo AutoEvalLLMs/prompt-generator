@@ -17,8 +17,8 @@ class FormatSeedPromptData:
             return None
         return {'demographic': parts[0], 'major': parts[1], 'format': parts[2]}
     
-    '''
-    def line_to_json_seed_messages(line):
+    @staticmethod
+    def line_to_json_seed_verbs(line):
         """
         Convert a line of text into a JSON object.
 
@@ -30,8 +30,8 @@ class FormatSeedPromptData:
         parts = line.strip().split(', ')
         if len(parts) < 3:
             return None
-        return {'demographic': parts[0], 'major': parts[1], 'format': parts[2]}
-    '''
+        return {'verb': parts[0]}
+   
 
     def convert_text_to_jsonl(self, input_file_path, output_file_path):
         """
@@ -43,11 +43,11 @@ class FormatSeedPromptData:
         :param output_file_path: The path to the output jsonl file.
         :type output_file_path: str
         """
-        with open(input_file_path, 'r') as text_file, open(output_file_path, 'w') as jsonl_file:
+        with open(input_file_path, 'r') as text_file, open(output_file_path, 'w') as output_jsonl_file:
             for line in text_file:
-                json_object = self.line_to_json(line)
+                json_object = self.line_to_json_seed_data(line)
                 if json_object:
-                    jsonl_file.write(json.dumps(json_object) + '\n')
+                    output_jsonl_file.write(json.dumps(json_object) + '\n')
 
 # Example usage:
 # formatter = FormatSeedPromptData()
