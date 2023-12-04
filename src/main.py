@@ -43,9 +43,9 @@ system_prompt_templates = promptsTemplateGenerator.generate_likert_scales_for_pr
 system_prompt = 'output/final_prompt_output.txt'
 message = 'output/variables_output_file.txt'
 
-
+from generate_prompts import generatePrompts
 # Initialize generatePrompts class:
-promptsGenerator = promptsTemplateGenerator.generatePrompts(system_prompt, message)
+promptsGenerator = generatePrompts(system_prompt, message)
 
 # get prompts:
 getPrompts = promptsGenerator.llm_request_prompt_generation(system_prompt, message)

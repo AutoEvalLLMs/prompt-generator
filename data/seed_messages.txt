@@ -1,0 +1,8 @@
+"For {demographic} studying {major}, please {verb} an {artifact}",
+"For {demographic} learning {major}, please {verb} an {artifact}",
+"For {demographic} doing {major}, please {verb} an {artifact}",
+"For {demographic} working on {major}, please {verb} an {artifact}",
+"For {demographic} who knows {major}, please {verb} an {artifact}",
+"For {demographic} who wants to do {major}, please {verb} an {artifact}",
+"For {demographic} who wants to learn {major}, please {verb} an {artifact}",
+"For {demographic} who wants to know how to do {major}, please {verb} an {artifact}"

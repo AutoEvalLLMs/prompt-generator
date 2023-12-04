@@ -6,11 +6,11 @@ import langchain_experimental.llms
 from langchain_experimental.llms import ChatLlamaAPI
 from dotenv import load_dotenv
 from langchain.prompts import PromptTemplate
+from langchain.schema import AIMessage, HumanMessage, SystemMessage
 
 load_dotenv()
 llama_api_key = os.getenv('KEY') # get the key from the .env file
 llama = LlamaAPI(llama_api_key)
-
 
 class generatePrompts:
     
