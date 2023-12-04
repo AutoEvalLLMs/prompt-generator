@@ -28,9 +28,9 @@ class FormatSeedPromptData:
         :return: A JSON object representing the line or None if the line is invalid.
         :rtype: dict or None
         """
-        parts = line.strip().split(', ')
-        if len(parts) < 3:
-            return None
+        #parts = line.strip().split(', ')
+        #if len(parts) < 3:
+           # return None
         return {'verb': parts[0]}
     
     def convert_text_to_jsonl(self, input_path, output_path):
