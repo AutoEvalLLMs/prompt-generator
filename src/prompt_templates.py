@@ -6,12 +6,13 @@ import json
 
 class PromptTemplates:
     
-    def __init__(self, seed_messages, seed_verbs, seed_variables, seed_likert_scales):
-        self.seed_messages = seed_messages
-        self.seed_verbs = seed_verbs
-        self.seed_variables = seed_variables
-        self.seed_likert_scales = seed_likert_scales
-        
+    #def __init__(self, seed_messages, seed_verbs, seed_variables, seed_likert_scales):
+        #self.seed_messages = seed_messages
+        #self.seed_verbs = seed_verbs
+        #self.seed_variables = seed_variables
+        #self.seed_likert_scales = seed_likert_scales
+    
+    @staticmethod
     def getPromptTemplates():
         seed_verbs = '/Users/skingsle/llm-class-term-project/prompt-generator/data/verbs'
         with open(seed_verbs) as d:
@@ -20,7 +21,14 @@ class PromptTemplates:
         import pandas as pd
         seed_verbs=pd.Series(seed_verbs).to_json()
 
-
+        seed_variables = '/Users/skingsle/llm-class-term-project/prompt-generator/data/seed_variables.txt'
+        with open(seed_variables) as e:
+            lines = e.readlines()
+            seed_variables = []
+            for line in lines:
+                variable=FormatSeedPromptData.line_to_json_seed_data(line)
+                seed_variables.append(variable)
+                
         examples = seed_variables
         examples 
 
@@ -53,7 +61,7 @@ class PromptTemplates:
                 template.format(demographic=variable[0], )
             template.format()
 
-'''   
+ 
     def modify_message_with_verbs(self, seed_messages, seed_verbs):
         formatter = FormatSeedPromptData()
         #seed_verbs = '/Users/skingsle/llm-class-term-project/prompt-generator/data/verbs'
@@ -113,7 +121,7 @@ class PromptTemplates:
                         return [formatted_prompt]
 
 
-'''
+
     def modify_message_with_verbs(self, seed_messages, seed_verbs):
         formatter = FormatSeedPromptData()
         seed_verbs = '/Users/skingsle/llm-class-term-project/prompt-generator/data/verbs'
@@ -126,8 +134,8 @@ class PromptTemplates:
             print('modified_messages_verbs', modified_messages_verbs)
             verbs_output.write(json.dumps(modified_messages_verbs) + '\n')
         return modified_messages_verbs
-    '''
-'''
+
+
     def modify_message_with_variables(self, seed_messages, seed_verbs, seed_variables):
         input_text_file = '/Users/skingsle/llm-class-term-project/prompt-generator/data/seed_variables'
         output_jsonl_file = 'output/output_file.jsonl'
@@ -147,10 +155,7 @@ class PromptTemplates:
                 output.write(json.dumps(modified_messages_variables) + '\n')
         # You must return seed_variables from this function
         return modified_messages_variables #seed_variables_formatted
-''' 
-    
-    
-''' 
+
     def modify_message_with_variables(self, seed_messages, seed_verbs, seed_variables):
         input_text_file = '/Users/skingsle/llm-class-term-project/prompt-generator/data/seed_variables'
         output_jsonl_file = 'output/output_file.jsonl'
