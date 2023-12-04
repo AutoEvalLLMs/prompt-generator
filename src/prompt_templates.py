@@ -11,7 +11,31 @@ class PromptTemplates:
         self.seed_verbs = seed_verbs
         self.seed_variables = seed_variables
         self.seed_likert_scales = seed_likert_scales
-    
+        
+    def getPromptTemplates():
+        seed_verbs = '/Users/skingsle/llm-class-term-project/prompt-generator/data/verbs'
+        with open(seed_verbs) as d:
+            seed_verbs = d.readlines()
+
+        import pandas as pd
+        seed_verbs=pd.Series(seed_verbs).to_json()
+
+
+        examples = seed_variables
+        examples 
+
+        example_prompt =PromptTemplate(input_variables=["demographic", "major", "verb", "format"], template="For {demographic} studying {major}, please provide {format}")
+
+        prompt_templates = []
+        for num in range(0, 48):
+            ugh=example_prompt.format_prompt(**examples[num])
+            ugh=ugh.to_string()
+            prompt_templates.append(ugh)
+            print(ugh)
+        return prompt_templates
+
+
+'''   
     def promptTemplates(self, seed_messages, seed_verbs, seed_variables, seed_likert_scales):
         self.seed_messages = seed_messages
         self.seed_verbs = seed_verbs
