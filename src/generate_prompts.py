@@ -19,6 +19,7 @@ class generatePrompts:
         self.messages = prompt_templates
     
     def llm_request_prompt_generation():
+        import pandas as pd
         messages = PromptTemplates.getPromptTemplates() # get the prompts
         systemPromptTemplates = PromptTemplates.getSystemPromptTemplates() # get the system prompts
     
@@ -31,14 +32,16 @@ class generatePrompts:
                 api_request_json = {
                     "model": "llama-13b-chat",
                     "messages": [
-                        {"role": "system", "content": systemPrompt},
-                        {"role": "user", "content": message}
+                        {"role": "system", "content": str(systemPrompt)},
+                        {"role": "user", "content":  str(message)}
                         ]
                     }
                 response = llama.run(api_request_json) # run the model
                 response=response.json() # convert the response to json
                 response=response['choices'][0]['message']['content'] # get the response
                 generatedPrompts.append(response) # append the response to the list of generated prompts
+                genPrompts = pd.DataFrame(generatedPrompts)
+                genPrompts.to_csv('output/generatedPrompts.csv')
         return generatedPrompts # return the list of generated prompts
                 
 

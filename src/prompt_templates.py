@@ -49,7 +49,7 @@ class PromptTemplates:
         examples = likert_scales
         examples 
 
-        example_sys_prompt =PromptTemplate(input_variables=["scale"], template="Instructions: Generate and print 5 versions of the 'user message', according to this {scale}:")
+        example_sys_prompt =PromptTemplate(input_variables=["scale"], template="Instructions: Generate and print 5 versions of the 'user message', according to this Likert scale: {scale}:")
 
         system_prompt_templates = []
         for num in range(0, 10):
