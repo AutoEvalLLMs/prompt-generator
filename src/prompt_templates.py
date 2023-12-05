@@ -29,7 +29,7 @@ class PromptTemplates:
         example_prompt =PromptTemplate(input_variables=["demographic", "major", "verb", "format"], template="For {demographic} studying {major}, please provide {format}")
 
         prompt_templates = []
-        for num in range(0, 48):
+        for num in range(0, 50):
             ugh=example_prompt.format_prompt(**examples[num])
             ugh=ugh.to_string()
             prompt_templates.append(ugh)
