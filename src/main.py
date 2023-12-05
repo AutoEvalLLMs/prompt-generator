@@ -12,6 +12,9 @@ formatter = FormatSeedPromptData()
 promptTemplates = PromptTemplates.getPromptTemplates()
 print(promptTemplates)
 
+systemPromptTemplates = PromptTemplates.getSystemPromptTemplates()
+print(systemPromptTemplates)
+
 # get prompts:
 #getPrompts = promptsGenerator.llm_request_prompt_generation(system_prompt, message)
 #print('getPrompts',getPrompts)

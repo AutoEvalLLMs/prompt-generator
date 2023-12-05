@@ -44,7 +44,7 @@ class PromptTemplates:
         with open(ls_path) as e:
             lines = e.readlines()
         for line in lines:
-            likert_scales.append(line_to_json_seed_scales(line))
+            likert_scales.append(FormatSeedPromptData.line_to_json_seed_scales(line))
             #print(likert_scales)
 
         examples = likert_scales
