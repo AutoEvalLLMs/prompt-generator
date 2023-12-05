@@ -4,51 +4,9 @@ from generate_prompts import generatePrompts
 from dotenv import load_dotenv
 from open_files import open_file
 
-
-# define the seed_verbs input and output file paths:
-#seed_verbs = '/Users/skingsle/llm-class-term-project/data/verbs.txt'  # Replace with the path to your seed-data variables file.
-#verbs_output_file = 'output/verbs_output_file.jsonl'
-
-
-# define the seed_messages input file path:
-#seed_messages = '/Users/skingsle/llm-class-term-project/data/seed_messages.txt'  # Replace with the path to your seed-data variables file.
-
-# convert the seed_variable input TEXT file to a .jsonl file
 input_text_file = '/Users/skingsle/llm-class-term-project/data/seed_variables.txt'
 output_jsonl_file = 'output/output_file.jsonl'
 formatter = FormatSeedPromptData()
-#seed_variables = formatter.convert_text_to_jsonl(input_text_file, output_jsonl_file)
-
-# define the seed_likert_scales input file path:
-#seed_likert_scales = '/Users/skingsle/llm-class-term-project/data/likert_scale_dict.txt'
-
-#variables_output_file = 'output/variables_output_file.jsonl'
-
-# Get prompt TEMPLATES to feed into LLM: 
-#### initialize PromptTemplates class:
-#promptsTemplateGenerator = PromptTemplates(seed_messages, seed_verbs, seed_variables, seed_likert_scales)
-
-# generate modified messages with verbs:
-#modified_messages_verbs = promptsTemplateGenerator.modify_message_with_verbs(message_templates, verbs_file_path, seed_messages_verbs_path)
-
-# generate modified messages with variables:
-#modified_messages_variables = promptsTemplateGenerator.modify_message_with_variables(seed_messages_verbs_output_file, variables_file_path, seed_messages_variables_output_file)
-                                                                               
-# generate likert scales for prompts:
-#promptTemplates = promptsTemplateGenerator.generate_likert_scales_for_prompts(seed_messages_variables_output_file, likert_file_path, prompt_output_file_path)
-
-# generate SYSTEM Prompte TEMPLATES:
-#system_prompt_templates = promptsTemplateGenerator.generate_likert_scales_for_prompts(seed_messages, seed_verbs, seed_variables, seed_likert_scales)
-
-#system_prompt = 'output/final_prompt_output.txt'
-#message = 'output/variables_output_file.txt'
-
-#from generate_prompts import generatePrompts
-# Initialize generatePrompts class:
-#promptsGenerator = generatePrompts(system_prompt, message)
-
-
-from prompt_templates import PromptTemplates
 
 # Initialize getPromptTemplates class:
 promptTemplates = PromptTemplates.getPromptTemplates()
