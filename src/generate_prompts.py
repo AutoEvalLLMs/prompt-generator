@@ -10,44 +10,36 @@ from langchain.schema import AIMessage, HumanMessage, SystemMessage
 
 load_dotenv()
 llama_api_key = os.getenv('KEY') # get the key from the .env file
-llama = LlamaAPI(llama_api_key)
+llama = LlamaAPI(llama_api_key) # create the API object
 
 class generatePrompts:
     
-    def __init__(self, prompt_output_file, message):
-        self.system_prompt = prompt_output_file
-        self.message = message
+    def __init__(self, systemPromptTemplates, prompt_templates):
+        self.system_prompt = systemPromptTemplates
+        self.messages = prompt_templates
+    
+    def llm_request_prompt_generation():
+        messages = PromptTemplates.getPromptTemplates() # get the prompts
+        systemPromptTemplates = PromptTemplates.getSystemPromptTemplates() # get the system prompts
+    
+        generatedPrompts = [] # initialize the list of generated prompts
+
+        model = ChatLlamaAPI(client=llama) # create the model
         
-    def llm_request_prompt_generation(self, system_prompt, message):
-        #systemPromptList = []
-        #with open(system_prompt, 'r') as systemPrompt:
-            #system_prompt = [line.strip() for line in systemPrompt] 
-            #system_prompt = system_prompt[0]
-            #systemPromptList.append(system_prompt)
-        system_prompt = self.system_prompt
-        message = self.message
-        #userPromptList = []
-        #with open(message, 'r') as message:
-            #user_prompt = [line.strip() for line in message]
-            #message = user_prompt[0]
-            #message = [line.strip() for line in message]
-            #userPromptList.append(user_prompt)
-        generatedPrompts = []
-        #for message in userPromptList:
-            #for systemPrompt in systemPromptList:
-        model = ChatLlamaAPI(client=llama)
-        api_request_json = {
-            "model": "llama-13b-chat",
-            "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": message}
-                ]
-            }
-        response = llama.run(api_request_json)
-        response=response.json()
-        response=response['choices'][0]['message']['content']
-        generatedPrompts.append(response)
-        return generatedPrompts
+        for systemPrompt in systemPromptTemplates:
+            for message in messages:
+                api_request_json = {
+                    "model": "llama-13b-chat",
+                    "messages": [
+                        {"role": "system", "content": systemPrompt},
+                        {"role": "user", "content": message}
+                        ]
+                    }
+                response = llama.run(api_request_json) # run the model
+                response=response.json() # convert the response to json
+                response=response['choices'][0]['message']['content'] # get the response
+                generatedPrompts.append(response) # append the response to the list of generated prompts
+        return generatedPrompts # return the list of generated prompts
                 
 
 

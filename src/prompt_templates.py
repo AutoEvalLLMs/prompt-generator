@@ -33,7 +33,7 @@ class PromptTemplates:
             ugh=example_prompt.format_prompt(**examples[num])
             ugh=ugh.to_string()
             prompt_templates.append(ugh)
-            print(ugh)
+            #print(ugh)
         return prompt_templates
     
     @staticmethod
@@ -45,7 +45,6 @@ class PromptTemplates:
             lines = e.readlines()
         for line in lines:
             likert_scales.append(FormatSeedPromptData.line_to_json_seed_scales(line))
-            #print(likert_scales)
 
         examples = likert_scales
         examples 
@@ -57,7 +56,7 @@ class PromptTemplates:
             scale=example_sys_prompt.format_prompt(**examples[num])
             scale=scale.to_string()
             system_prompt_templates.append(scale)
-            print(scale)
+            #print(scale)
         return system_prompt_templates
     
 

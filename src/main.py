@@ -9,15 +9,16 @@ output_jsonl_file = 'output/output_file.jsonl'
 formatter = FormatSeedPromptData()
 
 # Initialize getPromptTemplates class:
-promptTemplates = PromptTemplates.getPromptTemplates()
-print(promptTemplates)
+messages = PromptTemplates.getPromptTemplates()
+print(messages)
 
 systemPromptTemplates = PromptTemplates.getSystemPromptTemplates()
 print(systemPromptTemplates)
 
 # get prompts:
-#getPrompts = promptsGenerator.llm_request_prompt_generation(system_prompt, message)
-#print('getPrompts',getPrompts)
+from generate_prompts import generatePrompts
+getPrompts = generatePrompts.llm_request_prompt_generation()
+print('getPrompts',getPrompts)
 
 
 
